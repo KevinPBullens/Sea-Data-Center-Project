@@ -5,6 +5,7 @@ A comprehensive SQL database for tracking and analyzing Atlantic cod fishing quo
 # 📋 Business Purpose
 
 ### This database enables market analysts and seafood industry stakeholders to:
--   Track monthly catch volumes of Atlantic cod across 15 North Atlantic countries
--   Monitor yearly government-mandated quotas for Iceland and Norway
--   Analyze monthly trading prices for Atlantic cod
+-   Analyze yearly quotas
+-   Track monthly catch weights
+-   Compare quotas with actual caught weights
+-   Analyze monthly trading prices
