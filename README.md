@@ -1,6 +1,6 @@
-# 🐟 Atlantic Cod Market Analysis Database
+# 🐟 Sea Data Center Database
 
-A comprehensive SQL database for tracking and analyzing Atlantic cod fishing quotas, catch volumes, and market prices across North Atlantic countries for the year 2015 through 2019.
+A comprehensive SQL database for tracking and analyzing fishing quotas, catch volumes, and market prices across North Atlantic countries for the year 2015 through 2019.
 
 # 📋 Business Purpose
 
