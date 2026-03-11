@@ -1,0 +1,45 @@
+SELECT
+  country AS "Country",
+  product AS "Product",
+  product_year AS "Year",
+  quota_kg AS "Quota (kg)"
+FROM YearlyQuota;
+
+SELECT
+  country AS "Country",
+  product AS "Product",
+  catch_year AS "Year",
+  SUM(catch_kg) AS "Total Catch (kg)"
+FROM MonthlyCatch
+GROUP BY country, product, catch_year
+ORDER BY country, product, catch_year;
+
+SELECT
+  y.country AS Country,
+  y.product AS Product,
+  y.product_year AS Year,
+  y.quota_kg AS QuotaKg,
+  SUM(m.catch_kg) AS TotalCatchKg
+FROM YearlyQuota y
+LEFT JOIN MonthlyCatch m
+  ON y.country = m.country
+ AND y.product = m.product
+ AND y.product_year = m.catch_year
+GROUP BY
+  y.country,
+  y.product,
+  y.product_year,
+  y.quota_kg
+ORDER BY
+  y.country,
+  y.product,
+  y.product_year;
+
+SELECT
+  country AS "Country",
+  product AS "Product",
+  price_year AS "Year",
+  price_month AS "Month",
+  price_euro_kg AS "Price(€/kg)"
+FROM MonthlyTradingPrice
+ORDER BY country, product, price_year, price_month;
